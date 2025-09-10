@@ -1,0 +1,107 @@
+/* theme.css */
+
+/* General Body & HTML Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #900C3F !important;
+  border: none;
+}
+
+.navbar-brand, .nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Join as Organizer Button */
+.join-btn {
+  background-color: #fff !important;
+  color: #900C3F !important;
+  border: 2px solid #fff;
+  font-weight: bold;
+}
+
+.join-btn:hover {
+  background-color: #900C3F !important;
+  color: #fff !important;
+}
+
+/* Background Image and Transparent Overlay */
+.background-image {
+  background: url('https://sanjivanicoe.org.in/images/structure.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Footer */
+footer {
+  background-color: #900C3F;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px 0;
+}
+
+footer a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-links {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+footer .footer-copy {
+  text-align: center;
+  font-size: 14px;
+}
+/* Equal height event cards */
+.event-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Ensure card-body fills the vertical space */
+.event-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+/* Consistent image height */
+.event-card img {
+  height: 160px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .event-card img {
+    height: 140px;
+  }
+}
